@@ -1,10 +1,11 @@
-# PNG压缩上传工具
+# 图片压缩上传工具
 
-这是一个用于压缩PNG图片并上传到阿里云OSS的命令行工具。
+这是一个用于压缩图片并上传到阿里云OSS的命令行工具。
 
 ## 功能特点
 
-- 使用TinyPNG API压缩PNG图片
+- 支持PNG、JPEG、WebP和AVIF格式的图片压缩
+- 使用TinyPNG API压缩图片
 - 自动上传到阿里云OSS
 - 自动复制CDN URL到剪贴板
 - 自动安装所需依赖
@@ -33,7 +34,7 @@ chmod +x presspng.sh
 
 2. 运行脚本：
 ```bash
-./presspng.sh your-image.png
+./presspng.sh your-image.[png|jpg|jpeg|webp|avif]
 ```
 
 ## 注意事项
@@ -42,3 +43,4 @@ chmod +x presspng.sh
 - 首次运行时会自动安装必要的依赖
 - 压缩后的图片会保存在./pngpress目录下
 - 上传成功后的CDN URL会自动复制到剪贴板
+- 支持的图片格式：PNG、JPEG、WebP、AVIF
